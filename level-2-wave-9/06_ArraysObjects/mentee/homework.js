@@ -19,7 +19,7 @@
 
 // STEP 7: Log the updated contacts array.
 
-const contacts = ["Nat", "Navid"];
+const contacts = [nat, navid];
 
 const nat = {
     name: "Nat",
@@ -35,10 +35,14 @@ const navid = {
 
 console.log("Total Contacts:", contacts.length);
 
-console.log("First Contact Name:", contacts[0]);
+console.log("First Contact Name:", contacts[0].name);
 
 nat.isFavorite = true;
 
-contacts[2] = "Neftaly";
+contacts.push({
+    name: "Neftaly",
+    phone: "357-876-4743",
+    isFavorite: false,
+});
 
-console.log(contacts);
+console.log("Updated Contacts Array:", contacts);
